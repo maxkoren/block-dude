@@ -1,0 +1,49 @@
+* {
+	font-family: monospace;
+}
+
+body {
+	background-color: #E0DFDB;
+}
+
+.sidebar {
+	display: inline-block;
+	vertical-align: top;
+}
+
+#controls {
+	margin-bottom: 10px;
+}
+
+#controls > *:not(:last-child) {
+	margin-bottom: 6px;
+}
+
+canvas {
+	display: inline-block;
+
+	image-rendering: pixelated;
+	image-rendering: -moz-crisp-edges;
+	image-rendering: crisp-edges;
+
+	margin-right: 24px;
+	margin-bottom: 24px;
+}
+
+#history {
+	display: inline-block;
+	width: 256px;
+	overflow-wrap: break-word;
+}
+
+#redo {
+	color: rgba(0, 0, 0, .33);
+}
+
+.hide {
+	
+	/* I don't like this, but it's the easiest way. 
+	hidden=true doesn't work when you specify the display property.	*/
+	
+	display: none !important;
+}

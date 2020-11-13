@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" onkeyDown="key(event)">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="levels.js"></script>
+<script src="script.js"></script>
+<title>Block Dude</title>
+</head>
+<body>
+<canvas id="screen" height="456" width="696"></canvas>
+<div class="sidebar">
+	<div id="controls">
+		<select onchange="selectLevel()" id="levelSelector">
+			<option value="0">Level 1 (tcP)</option>
+			<option value="1">Level 2 (ARo)</option>
+			<option value="2">Level 3 (CKs)</option>
+			<option value="3">Level 4 (daN)</option>
+			<option value="4">Level 5 (BAH)</option>
+			<option value="5">Level 6 (Ion)</option>
+			<option value="6">Level 7 (Twe)</option>
+			<option value="7">Level 8 (nTy)</option>
+			<option value="8">Level 9 (iRC)</option>
+			<option value="9">Level 10 (JmK)</option>
+			<option value="10">Level 11 (wTF)</option>
+		</select>
+		<div>
+			<label><input type="checkbox" id="autoClimb" onchange="setAutoClimb()" checked>Auto-Climb (L)</label>
+		</div>
+		<div>
+			Use WASD or arrow keys to move.<br>
+			M: Restart<br>
+			Z: Undo<br>
+			Y: Redo<br>
+			<!-- H: Show move history<br> -->
+			Enter: Hide controls
+		</div>
+	</div>
+	<!--
+	<div id="history">
+		<span id="undo"></span><span id="redo"></span>
+	</div>
+	-->
+</div>
+</body>
+</html>
